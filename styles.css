@@ -26,7 +26,7 @@ img, svg { max-width: 100%; }
 .skip-link:focus { top: 16px; }
 
 .site-header { position: absolute; inset: 0 0 auto; z-index: 20; color: #f6f3eb; }
-.header-inner { height: 100px; display: flex; align-items: center; gap: 40px; border-bottom: 1px solid rgba(255,255,255,.13); }
+.header-inner { height: 100px; display: flex; align-items: center; gap: 22px; border-bottom: 1px solid rgba(255,255,255,.13); }
 .brand { display: inline-flex; align-items: center; gap: 11px; flex: 0 0 auto; }
 .brand-mark { width: 37px; height: 37px; display: grid; place-items: center; position: relative; border: 1px solid var(--gold); border-radius: 7px; font: 700 25px/1 "Noto Serif KR", serif; color: var(--gold); }
 .brand-mark-rule { position: absolute; width: 5px; height: 1px; background: var(--gold); right: 5px; bottom: 7px; }
@@ -34,8 +34,10 @@ img, svg { max-width: 100%; }
 .main-nav { display: flex; align-items: center; justify-content: center; flex: 1; gap: clamp(20px, 3.4vw, 54px); }
 .main-nav a { font-size: 14px; font-weight: 500; color: #d8d9d8; transition: color .2s; }
 .main-nav a:hover { color: var(--gold); }
-.header-download { display: flex; align-items: center; justify-content: center; gap: 28px; min-height: 43px; padding: 0 19px; border: 1px solid #d2c9b6; border-radius: 3px; color: #f6f3eb; font-size: 14px; font-weight: 600; transition: color .2s, background .2s; }
+.header-download { display: flex; align-items: center; justify-content: center; gap: 13px; min-height: 43px; padding: 0 15px; border: 1px solid #d2c9b6; border-radius: 3px; color: #f6f3eb; font-size: 14px; font-weight: 600; white-space: nowrap; transition: color .2s, background .2s; }
 .header-download:hover { background: var(--gold); color: var(--ink); }
+.header-web { display: flex; align-items: center; justify-content: center; gap: 20px; min-height: 43px; padding: 0 17px; border-radius: 3px; color: var(--ink); background: var(--gold); font-size: 14px; font-weight: 700; white-space: nowrap; transition: background .2s, transform .2s; }
+.header-web:hover { background: #f1d9a9; transform: translateY(-2px); }
 
 .hero { min-height: 844px; position: relative; color: #f4f1e9; background: radial-gradient(ellipse 75% 75% at 87% 57%, #313335 0%, #22272a 44%, var(--ink) 100%); overflow: hidden; }
 .hero::before { content: ""; position: absolute; width: 900px; height: 900px; right: -340px; top: 20px; border: 1px solid rgba(231,203,145,.12); border-radius: 50%; box-shadow: 0 0 0 150px rgba(231,203,145,.025), 0 0 0 300px rgba(231,203,145,.018); pointer-events: none; }
@@ -151,9 +153,10 @@ img, svg { max-width: 100%; }
 .download-inner { position: relative; z-index: 1; display: flex; justify-content: space-between; align-items: end; gap: 70px; }
 .download-section h2 em { color: var(--gold); }
 .download-section h2 + p { margin: 28px 0 0; color: #c7c8c4; font-size: 18px; }
-.download-panel { width: 330px; flex: 0 0 330px; display: flex; flex-direction: column; gap: 13px; padding: 25px; border: 1px solid #68675f; background: rgba(255,255,255,.025); }
+.download-panel { width: 350px; flex: 0 0 350px; display: flex; flex-direction: column; gap: 13px; padding: 25px; border: 1px solid #68675f; background: rgba(255,255,255,.025); }
 .download-panel > span { color: #aca99f; font-size: 11px; font-weight: 700; letter-spacing: .13em; }
 .download-panel .button { justify-content: space-between; width: 100%; gap: 16px; }
+.download-divider { margin: 9px 0 1px; padding-top: 18px; border-top: 1px solid #585b58; color: #aca99f; font-size: 11px; font-weight: 700; letter-spacing: .13em; }
 .download-panel small { color: #b3b3ae; font-size: 13px; line-height: 1.55; }
 .download-panel small a { display: inline-block; margin: 8px 10px 0 0; color: var(--gold); white-space: nowrap; }
 .download-panel small a:hover { text-decoration: underline; }
@@ -192,6 +195,7 @@ img, svg { max-width: 100%; }
   .header-inner { height: 82px; gap: 20px; }
   .main-nav { gap: 17px; }
   .main-nav a { font-size: 13px; }
+  .header-download { display: none; }
   .hero-grid { padding-top: 137px; padding-bottom: 73px; min-height: unset; grid-template-columns: 1fr; gap: 64px; }
   .hero-copy { padding: 0; }
   .hero h1 { font-size: clamp(69px,9vw,99px); }
@@ -222,7 +226,7 @@ img, svg { max-width: 100%; }
   .brand-mark { width: 33px; height: 33px; font-size: 22px; }
   .brand-name { font-size: 23px; }
   .main-nav { display: none; }
-  .header-download { margin-left: auto; min-height: 39px; padding: 0 12px; gap: 12px; font-size: 13px; }
+  .header-web { margin-left: auto; min-height: 39px; padding: 0 12px; gap: 12px; font-size: 13px; }
   .hero { min-height: 0; }
   .hero::before { right: -600px; }
   .hero-grid { padding-top: 134px; padding-bottom: 57px; gap: 62px; }
